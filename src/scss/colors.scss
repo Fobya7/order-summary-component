@@ -1,0 +1,19 @@
+
+@use 'breakpoints.scss';
+
+
+$background: hsl(225, 100%, 94%);
+
+
+body {
+    margin: 0;
+    background-color: $background;
+    background-image: url(/assets/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    }
+@media only screen and ( min-width: breakpoints.$desktop ) {
+body { background-image: url(/assets/pattern-background-desktop.svg); }
+    }
+
+a { color: hsl(228, 45%, 44%); }
