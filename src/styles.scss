@@ -1,19 +1,18 @@
 
 @use 'scss/_colors.scss' as c;
 @use 'scss/_variables.scss' as v;
-@use 'scss/_typography.scss' as t;
 
 
 /* webpage background */
 body {
     margin: 0;
     background-color: c.$background;
-    background-image: url(/assets/pattern-background-mobile.svg);
+    background-image: url(assets/pattern-background-mobile.svg);
     background-repeat: no-repeat;
     background-size: 100%;
     }
 @media only screen and ( min-width: v.$breakpoint-desktop ) {
-body { background-image: url(/assets/pattern-background-desktop.svg); }
+body { background-image: url(assets/pattern-background-desktop.svg); }
     }
 
 /* link color */
@@ -22,7 +21,7 @@ a { color: hsl(228, 45%, 44%); }
 /* main text */
 body, button {
     font-size: 16px;
-    font-family: "RedHatDisplay";
+    font-family: 'Red Hat Display';
     }
 @media only screen and ( min-width: v.$breakpoint-desktop ) {
     body, button {
