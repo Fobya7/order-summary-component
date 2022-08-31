@@ -44,7 +44,7 @@ Angular app structure. A little bit of TypeScript (component classes and imports
 
 - Some SCSS, namely: variables and imports, using the parent selector.
 
-- Also, how SCSS and Angular interact. In particular, [setting up the style preprocessor](https://www.digitalocean.com/community/tutorials/using-sass-with-the-angular-cli) to preload my variables.
+- Also, how SCSS and Angular interact. In particular, [setting up the style preprocessor](https://www.digitalocean.com/community/tutorials/using-sass-with-the-angular-cli) to preload my variables from multiple files in a SCSS dedicated dir.
 
 - How to [publish an Angular website on Github Pages](https://github.com/angular-schule/angular-cli-ghpages).
 
