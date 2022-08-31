@@ -1,15 +1,57 @@
 
 # Order Component Solution with Angular
 
-add all angular links I've got
+This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj), and also my first time using [Angular](https://angular.io/).
 
-[css breakpoints](https://css-tricks.com/snippets/sass/mixin-manage-breakpoints/)
 
-[color picker](https://www.webfx.com/web-design/color-picker/)
+## Overview
 
-[style preprocessor](https://www.digitalocean.com/community/tutorials/using-sass-with-the-angular-cli)
+### The challenge
 
-[loading fonts](https://material.angular.io/guide/typography)
-[google fonts](https://developers.google.com/fonts/docs/getting_started)
+Users should be able to:
 
-[publishing on github pages with angular cli](https://github.com/angular-schule/angular-cli-ghpages)
+- See hover states for interactive elements
+
+### Solution
+
+Live site is [here](https://fobya7.github.io/order-summary-component/).
+
+<table>
+    <tr>
+        <th>Desktop</th>
+        <th>Mobile</th>
+    </tr>
+    <tr>
+        <td width="70%"> <img src="readme/screenshot-desktop.png"> </td>
+        <td width="30%"> <img src="readme/screenshot-mobile.png"> </td>
+    </tr>
+</table>
+
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- Flexbox
+- [SCSS](https://sass-lang.com/)
+- [Angular](https://angular.io/)
+
+### What I learned
+
+- Well, Angular. Using Angular CLI for starting the project and adding modules.
+Angular app structure. A little bit of TypeScript (component classes and imports).
+
+- Some SCSS, namely: variables and imports, using the parent selector.
+
+- Also, how SCSS and Angular interact. In particular, [setting up the style preprocessor](https://www.digitalocean.com/community/tutorials/using-sass-with-the-angular-cli) to preload my variables.
+
+- How to [publish an Angular website on Github Pages](https://github.com/angular-schule/angular-cli-ghpages).
+
+- [Loading fonts remotly](https://developers.google.com/fonts/docs/getting_started).
+
+### Continued development
+
+- I need to get better with organizing code; as in - what goes where, what should be it's own component, how to structure scss files.
+
+- Typescript. Angular component and module classes seemed interesting, can't wait to do some serious coding.
