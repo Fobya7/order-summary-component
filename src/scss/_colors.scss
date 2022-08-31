@@ -1,20 +1,10 @@
 
-@use 'breakpoints.scss';
-
-
 $background: hsl(225, 100%, 94%);
 $surface: white;
+$surface-variant: hsl(225, 100%, 98%);
+$on-surface: hsl(224, 23%, 55%);
+$on-surface-variant: hsl(223, 47%, 23%);
 
-
-body {
-    margin: 0;
-    background-color: $background;
-    background-image: url(/assets/pattern-background-mobile.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    }
-@media only screen and ( min-width: breakpoints.$desktop ) {
-body { background-image: url(/assets/pattern-background-desktop.svg); }
-    }
-
-a { color: hsl(228, 45%, 44%); }
+$primary: hsl(245, 75%, 52%);
+$on-primary: white;
+$primary-shadow: hsl(243, 97%, 91%);

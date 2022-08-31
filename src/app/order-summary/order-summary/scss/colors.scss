@@ -3,4 +3,26 @@
 
 .order-summary-card {
     background-color: $surface;
+    color: $on-surface;
+    & h1, h2 {
+        color: $on-surface-variant;
+        }
+    }
+.plan-card {
+    background-color: $surface-variant;
+    }
+
+.order-summary-button-proceed {
+    background-color: $primary;
+    color: $on-primary;
+    box-shadow: 0px 20px 20px $primary-shadow;
+    }
+.order-summary-button-cancel, .plan-button-change {
+    background-color: transparent;
+    }
+.order-summary-button-cancel {
+    color: $on-surface;
+    }
+.plan-button-change {
+    color: $primary;
     }

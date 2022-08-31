@@ -1,5 +1,37 @@
 
+@use '_typography.scss';
+
 .attribution {
     font-size: 11px; 
     text-align: center;
+    }
+
+h1 {
+    font-size: 28px;
+    font-weight: 900;
+    }
+h2 {
+    font-size: 16px;
+    font-weight: 900;
+    }
+:host {
+    font-weight: 500;
+    line-height: 160%;
+    text-align: center;
+    }
+
+button {
+    font-size: 14px;
+    font-weight: 700;
+    }
+.plan-card button {
+    text-decoration: underline;
+    }
+.order-summary-buttons > * {
+    letter-spacing: 1px;
+    }
+
+
+.plan-desc {
+    text-align: left;
     }

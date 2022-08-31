@@ -1,0 +1,93 @@
+
+* {
+    margin: 0;
+}
+
+.order-summary-card, .order-summary-text {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    }
+.order-summary-text {
+    padding: 2.8rem 3rem 1rem 3rem;
+    }
+
+.plan-card {
+    width: 100%;
+    }
+.plan-container {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    padding: 1.5rem;
+    & > * {
+        margin-right: 1.2rem;
+        }
+    & > *:last-child {
+        margin-right: 0rem
+        }
+    }
+.plan-desc {
+    flex: 1;
+    & > * {
+        margin-bottom: 0.2rem;
+        }
+    & > *:last-child {
+        margin-bottom: 0;
+        }
+    }
+.plan-button-change {
+    width: fit-content;
+    }
+
+.order-summary-text > * {
+    margin: 0.6rem 0;
+
+    &:first-child {
+        margin-top: 0;
+        }
+
+    &:last-child {
+        margin-top: 1.3rem;
+        }
+    }
+
+.order-summary-hero-img-container {
+    width: 100%;
+    }
+.order-summary-hero-img {
+    width: 100%;
+    object-fit: cover;
+    }
+
+.order-summary-buttons {
+    width: 100%;
+    }
+.order-summary-buttons > button {
+    width: 100%;
+    height: 3.2rem;
+    margin-bottom: 0.8rem;
+
+    &:last-child {
+        margin-bottom: 0;
+        }
+    }
+
+
+.order-summary-card {
+    border-radius: 1.2rem;
+    }
+.order-summary-hero-img {
+    border-radius: 1.2rem 1.2rem 0 0;
+    }
+button, .plan-card {
+    border-style: none;
+    border-radius: 1rem;
+    }
+
+
+/* 'controversial' */
+.order-summary-card {
+    width: 28rem;
+    }
+
