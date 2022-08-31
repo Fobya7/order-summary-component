@@ -54,4 +54,8 @@ Angular app structure. A little bit of TypeScript (component classes and imports
 
 - I need to get better with organizing code; as in - what goes where, what should be it's own component, how to structure scss files.
 
+- Angular. Using interpolation and routing and so much more things I don't yet know about.
+
 - Typescript. Angular component and module classes seemed interesting, can't wait to do some serious coding.
+
+- SCSS. Will probably start with learning mixins and interpolation.
