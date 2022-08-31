@@ -22,7 +22,10 @@
     }
 .order-summary-button-cancel {
     color: $on-surface;
-    &:hover { color: $on-surface-variant; }
+    &:hover {
+        color: $on-surface-variant;
+        font-weight: 900;
+        }
     }
 .plan-button-change {
     color: $primary;
