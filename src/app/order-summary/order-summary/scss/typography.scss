@@ -1,17 +1,13 @@
-
 @use '_typography.scss';
+@use '_variables.scss' as v;
+
 
 .attribution {
     font-size: 11px; 
     text-align: center;
     }
 
-h1 {
-    font-size: 28px;
-    font-weight: 900;
-    }
-h2 {
-    font-size: 16px;
+h1, h2 {
     font-weight: 900;
     }
 :host {
@@ -34,4 +30,19 @@ button {
 
 .plan-desc {
     text-align: left;
+    line-height: 140%;
+    }
+
+/* screen size dependant */
+@media only screen and ( max-width: (v.$breakpoint-desktop - 1) ) {
+    h1 { font-size: 22px; }
+    h2 { font-size: 14px; }
+    .plan-desc p { font-size: 14px; }
+    .plan-button-change { font-size: 13px; }
+    :host { font-size: 15px; }
+    }
+@media only screen and ( min-width: v.$breakpoint-desktop ) {
+    h1 { font-size: 28px; }
+    h2 { font-size: 16px; }
+    :host { font-size: 16px; }
     }

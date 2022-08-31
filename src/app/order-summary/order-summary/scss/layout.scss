@@ -1,3 +1,5 @@
+@use '_variables.scss' as v;
+
 
 * {
     margin: 0;
@@ -8,9 +10,6 @@
     flex-flow: column;
     align-items: center;
     }
-.order-summary-text {
-    padding: 2.8rem 3rem 1rem 3rem;
-    }
 
 .plan-card {
     width: 100%;
@@ -19,36 +18,23 @@
     display: flex;
     flex-flow: row;
     justify-content: center;
-    padding: 1.5rem;
-    & > * {
-        margin-right: 1.2rem;
-        }
-    & > *:last-child {
-        margin-right: 0rem
-        }
+    align-items: center;
     }
 .plan-desc {
     flex: 1;
-    & > * {
-        margin-bottom: 0.2rem;
-        }
-    & > *:last-child {
-        margin-bottom: 0;
-        }
     }
 .plan-button-change {
     width: fit-content;
+    height: fit-content;
+    }
+
+.plan-icon-container {
+    height: 50px;
     }
 
 .order-summary-text > * {
-    margin: 0.6rem 0;
-
     &:first-child {
         margin-top: 0;
-        }
-
-    &:last-child {
-        margin-top: 1.3rem;
         }
     }
 
@@ -66,7 +52,6 @@
 .order-summary-buttons > button {
     width: 100%;
     height: 3.2rem;
-    margin-bottom: 0.8rem;
 
     &:last-child {
         margin-bottom: 0;
@@ -82,12 +67,84 @@
     }
 button, .plan-card {
     border-style: none;
-    border-radius: 1rem;
     }
 
 
-/* 'controversial' */
-.order-summary-card {
-    width: 28rem;
-    }
+/* screen size dependant */
+@media only screen and ( max-width: (v.$breakpoint-desktop - 1) ) {
+    :host {
+        width: 100%;
+        }
+    .order-summary-card {
+        margin: 0 1.5rem;
+        }
+    .order-summary-text {
+        padding: 2rem 1.5rem 0.4rem 1.5rem;
+        & > p {
+            padding: 0 1rem;
+            }
+        }
+    button, .plan-card {
+        border-radius: 0.7rem;
+        }
+    .plan-container {
+        padding: 1rem;
+        & > * {
+            margin-right: 1.2rem;
+            }
+        & > *:last-child {
+            margin-right: 0rem
+            }
+        }
+    .plan-desc p {
+        margin-bottom: 0;
+        }
+    .order-summary-buttons > button {
+        margin-bottom: 0.5rem;
+        }
+    .order-summary-text > * {
+        margin: 0.6rem 0;
 
+        &:last-child {
+            margin-top: 1rem;
+            }
+        }
+    }
+@media only screen and ( min-width: v.$breakpoint-desktop ) {
+    .order-summary-card {
+        width: 28rem;
+        }
+    .order-summary-text {
+        padding: 2.8rem 3rem 1rem 3rem;
+        }
+    button, .plan-card {
+        border-radius: 1rem;
+        }
+    .plan-container {
+        padding: 1.5rem;
+        & > * {
+            margin-right: 1.2rem;
+            }
+        & > *:last-child {
+            margin-right: 0rem
+            }
+        }
+    .plan-desc {
+        & > * {
+            margin-bottom: 0.2rem;
+            }
+        & > *:last-child {
+            margin-bottom: 0;
+            }
+        }
+    .order-summary-buttons > button {
+        margin-bottom: 0.8rem;
+        }
+    .order-summary-text > * {
+        margin: 0.6rem 0;
+
+        &:last-child {
+            margin-top: 1.3rem;
+            }
+        }
+    }

@@ -24,3 +24,8 @@ body, button {
     font-size: 16px;
     font-family: "RedHatDisplay";
     }
+@media only screen and ( min-width: v.$breakpoint-desktop ) {
+    body, button {
+        font-size: 14px;
+        }
+    }
