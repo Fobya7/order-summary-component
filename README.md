@@ -1,5 +1,5 @@
 
-# Order Component Solution with Angular
+# Order Component Solution with Angular and SCSS styling
 
 This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj), and also my first time using [Angular](https://angular.io/).
 
